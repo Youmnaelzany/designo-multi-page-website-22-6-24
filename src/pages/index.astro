@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='Designo Agency Website Challenge.'>
+  <Header />
+  <main>
+    <!-- Background Pattern -->
+    <section class='relative'>
+      <img
+        src='/assets/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern'
+        class='absolute left-0 top-[267px] z-30 hidden lg:flex'
+      />
+    </section>
+    <!-- Hero Section -->
+    <section
+      class='relative z-40 h-[52.6875rem] w-[23.4375rem] overflow-hidden bg-[#E7816B] px-6 pt-20 md:ml-[2.44rem] md:mr-10 md:h-[52.6875rem] md:w-[43.0625rem] md:rounded-[0.9375rem] md:px-[3.62rem] md:pt-[3.75rem] lg:mx-[10.31rem] lg:h-[40rem] lg:w-[69.4375rem] lg:px-[5.94rem] lg:py-[9.06rem]'
+    >
+      <img
+        src='/assets/home/desktop/bg-pattern-hero-home.svg'
+        alt=''
+        class='heroPattern absolute right-[-263px] top-[108px] z-30 max-w-[40rem] md:right-[-120px] md:top-[96px] lg:right-0 lg:top-0'
+      />
+      <div
+        class='relative z-40 flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-left'
+      >
+        <h1
+          class='mb-[0.88rem] w-[20.4375rem] text-[2rem] font-medium leading-10 text-white md:w-[35.8125rem] md:text-5xl md:leading-[3rem] lg:w-[33.75rem]'
+        >
+          Award-winning custom designs and digital branding solutions
+        </h1>
+
+        <p
+          class='mb-6 w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-white md:w-[27.8125rem] md:text-base md:leading-relaxed lg:mb-10 lg:w-[27.8125rem]'
+        >
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand experiences.
+          Find out more about our services.
+        </p>
+
+        <button
+          type='button'
+          class='h-14 w-[9.5rem] cursor-pointer rounded-lg bg-white text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.0625rem] text-[#333136] transition-colors duration-300 ease-in hover:bg-[#FFAD9B] hover:text-white'
+          >Learn more</button
+        >
+      </div>
+      <div class=''>
+        <img
+          src='/public/assets/home/desktop/image-hero-phone.png'
+          alt=''
+          class='absolute bottom-[-347px] left-[-111px] z-40 max-w-[37rem] md:left-[27px] md:max-w-[39rem] lg:bottom-[-217px] lg:left-[570px]'
+        />
+      </div>
+    </section>
+    <!-- About Section -->
+    <section
+      class='mx-6 my-[7.5rem] grid md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:my-40'
+    >
+    </section>
+  </main>
+</Layout>

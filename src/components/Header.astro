@@ -1,0 +1,97 @@
+---
+import '@/styles/globals.css';
+---
+
+<header
+  class='relative mx-6 mb-[2.31rem] mt-[2.19rem] flex items-center justify-between md:my-16 md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:mb-[4.19rem]'
+>
+  <div class='flex items-center justify-between gap-[6.62rem]'>
+    <a href='/' aria-label='Home'>
+      <img
+        src='/assets/shared/desktop/logo-dark.png'
+        alt='logo'
+        class='w-[12.31rem]'
+      />
+    </a>
+    <button
+      type='button'
+      class='md:hidden'
+      aria-label='Open Menu'
+      id='openMenu'
+    >
+      <img
+        src='/assets/shared/mobile/icon-hamburger.svg'
+        alt='Hamburger Menu'
+      />
+    </button>
+    <button type='button' class='hidden' aria-label='Close Menu' id='closeMenu'>
+      <img src='/assets/shared/mobile/icon-close.svg' alt='Close Menu' />
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <nav
+    class='absolute -left-6 top-[3.813rem] z-50 hidden h-[14.6875rem] w-[23.4375rem] bg-[#1D1C1E] px-6 py-12'
+    id='mobileMenu'
+  >
+    <ul class='flex flex-col gap-8'>
+      <li>
+        <a
+          href='/about'
+          class='cursor-pointer text-2xl font-normal uppercase leading-[1.5625rem] tracking-[0.125rem] text-white'
+          >Our Company</a>
+      </li>
+      <li>
+        <a
+          href='/locations'
+          class='cursor-pointer text-2xl font-normal uppercase leading-[1.5625rem] tracking-[0.125rem] text-white'
+          >Locations</a>
+      </li>
+      <li>
+        <a
+          href='/contact'
+          class='cursor-pointer text-2xl font-normal uppercase leading-[1.5625rem] tracking-[0.125rem] text-white'
+          >Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Tablet & Desktop Menu -->
+  <nav class='hidden md:flex'>
+    <ul class='flex items-center justify-between gap-[2.62rem]'>
+      <li>
+        <a
+          href='/about'
+          class='text-sm font-normal uppercase leading-[0.875rem] tracking-[0.125rem] text-[#333136] transition duration-300 ease-in hover:underline'
+          >Our Company</a>
+      </li>
+      <li>
+        <a
+          href='/locations'
+          class='text-sm font-normal uppercase leading-[0.875rem] tracking-[0.125rem] text-[#333136] transition duration-300 ease-in hover:underline'
+          >Locations</a>
+      </li>
+      <li>
+        <a
+          href='/contact'
+          class='text-sm font-normal uppercase leading-[0.875rem] tracking-[0.125rem] text-[#333136] transition duration-300 ease-in hover:underline'
+          >Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.getElementById('openMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  openMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    openMenu.classList.add('hidden');
+    closeMenu.classList.remove('hidden');
+  });
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    openMenu.classList.remove('hidden');
+    closeMenu.classList.add('hidden');
+  });
+</script>

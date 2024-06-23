@@ -1,0 +1,74 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Frontend Mentor | Designo Agency Website Challenge',
+  description = 'Frontend Mentor | Designo Agency Website Challenge',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/assets/favicon-32x32.png' />
+    <meta name='generator' content={Astro.generator} />
+    <!-- Google Fonts -->
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  html {
+    hanging-punctuation: first last;
+  }
+
+  body {
+    min-height: 100svh;
+    max-width: 1440px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9375rem;
+  }
+
+  img,
+  picture,
+  svg,
+  video {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+      scroll-behavior: smooth;
+      scroll-padding-top: 3rem;
+    }
+  }
+</style>
