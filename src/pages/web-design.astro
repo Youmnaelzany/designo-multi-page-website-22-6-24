@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+import Header from '../components/Header.astro';
+import AboutProject from '../components/AboutProject.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title='Designo Agency Website Challenge.'>
+  <!-- The Haeder -->
+  <Header />
+  <!-- The Main Section & Background Patterns  -->
+  <main>
+    <!-- Web Design -->
+    <section class=''>
+      <h1 class=''>Web design</h1>
+      <p class=''>
+        We build websites that serve as powerful marketing tools and bring
+        memorable brand experiences.
+      </p>
+    </section>
+    <!-- Express -->
+    <section class=''>
+      <div class=''>
+        <img
+          src='/public/assets/web-design/desktop/image-express.jpg'
+          alt=''
+          class=''
+        />
+      </div>
+      <div class=''>
+        <h2 class=''>Express</h2>
+        <p class=''>
+          A multi-carrier shipping website for ecommerce businesses
+        </p>
+      </div>
+    </section>
+    <!-- Transfer -->
+    <section class=''>
+      <div class=''>
+        <img
+          src='/public/assets/web-design/desktop/image-transfer.jpg'
+          alt=''
+          class=''
+        />
+      </div>
+      <div class=''>
+        <h2 class=''>Transfer</h2>
+        <p class=''>
+          Site for low-cost money transfers and sending money within seconds
+        </p>
+      </div>
+    </section>
+    <!-- Photon -->
+    <section class=''>
+      <div class=''>
+        <img
+          src='/public/assets/web-design/desktop/image-photon.jpg'
+          alt=''
+          class=''
+        />
+      </div>
+      <div class=''>
+        <h2 class=''>Photon</h2>
+        <p class=''>
+          A state-of-the-art music player with high-resolution audio and DSP
+          effects
+        </p>
+      </div>
+    </section>
+
+    <h2 class=''>Builder</h2>
+    <p class=''>
+      Connects users with local contractors based on their location
+    </p>
+
+    <h2 class=''>Blogr</h2>
+    <p class=''>
+      Blogr is a platform for creating an online blog or publication
+    </p>
+
+    <h2 class=''>Camp</h2>
+    <p class=''>
+      Get expert training in coding, data, design, and digital marketing
+    </p>
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>
