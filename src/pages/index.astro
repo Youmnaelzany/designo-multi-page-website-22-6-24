@@ -2,17 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import '@/styles/globals.css';
 import Header from '../components/Header.astro';
+import AboutProject from '../components/AboutProject.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title='Designo Agency Website Challenge.'>
+  <!-- The Haeder -->
   <Header />
+  <!-- The Main Section & Background Patterns  -->
   <main>
-    <!-- Background Pattern -->
+    <!-- Background Pattern Leaf Left -->
     <section class='relative'>
       <img
         src='/assets/shared/desktop/bg-pattern-leaf.svg'
         alt='pattern'
-        class='absolute left-0 top-[267px] z-30 hidden lg:flex'
+        class='absolute left-0 top-[267px] z-0 hidden lg:flex'
       />
     </section>
     <!-- Hero Section -->
@@ -20,7 +24,7 @@ import Header from '../components/Header.astro';
       class='relative z-40 h-[52.6875rem] w-[23.4375rem] overflow-hidden bg-[#E7816B] px-6 pt-20 md:ml-[2.44rem] md:mr-10 md:h-[52.6875rem] md:w-[43.0625rem] md:rounded-[0.9375rem] md:px-[3.62rem] md:pt-[3.75rem] lg:mx-[10.31rem] lg:h-[40rem] lg:w-[69.4375rem] lg:px-[5.94rem] lg:py-[9.06rem]'
     >
       <img
-        src='/assets/home/desktop/bg-pattern-hero-home.svg'
+        src='/assets/shared/desktop/bg-pattern-hero-home.svg'
         alt=''
         class='heroPattern absolute right-[-263px] top-[108px] z-30 max-w-[40rem] md:right-[-120px] md:top-[96px] lg:right-0 lg:top-0'
       />
@@ -49,7 +53,7 @@ import Header from '../components/Header.astro';
       </div>
       <div class=''>
         <img
-          src='/public/assets/home/desktop/image-hero-phone.png'
+          src='/assets/home/desktop/image-hero-phone.png'
           alt=''
           class='absolute bottom-[-347px] left-[-111px] z-40 max-w-[37rem] md:left-[27px] md:max-w-[39rem] lg:bottom-[-217px] lg:left-[570px]'
         />
@@ -57,8 +61,232 @@ import Header from '../components/Header.astro';
     </section>
     <!-- About Section -->
     <section
-      class='mx-6 my-[7.5rem] grid md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:my-40'
+      class='mx-6 my-[7.5rem] grid grid-cols-1 gap-x-[1.88rem] gap-y-6 md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:my-40 lg:grid-cols-2'
     >
+      <!-- Web Design -->
+      <div
+        class='relative cursor-pointer transition-all duration-300 ease-in hover:after:absolute hover:after:top-0 hover:after:z-40 hover:after:h-[100%] hover:after:w-[100%] hover:after:rounded-[0.9375rem] hover:after:bg-[#E7816B]/70 lg:row-span-3 lg:hover:after:h-[96.5%]'
+      >
+        <picture>
+          <source
+            media='(min-width: 1440px)'
+            srcset='/assets/home/desktop/image-web-design-large.jpg'
+          />
+          <source
+            media='(min-width: 768px)'
+            srcset='/assets/home/tablet/image-web-design.jpg'
+          />
+          <img
+            src='/assets/home/mobile/image-web-design.jpg'
+            alt=''
+            class='rounded-[0.9375rem]'
+          />
+        </picture>
+        <div
+          class='absolute top-0 z-50 flex h-[100%] w-[100%] flex-col items-center justify-center gap-5 rounded-[0.9375rem] text-center md:gap-6'
+        >
+          <h2
+            class='text-9 text-[1.75rem] font-medium tracking-[0.0875rem] text-white md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.125rem]'
+          >
+            Web Design
+          </h2>
+          <a
+            href='/web-design'
+            class='flex items-center gap-4 text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.3125rem] text-white'
+            >View Projects
+            <img
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='right arrow'
+            />
+          </a>
+        </div>
+      </div>
+      <!-- App Design -->
+      <div
+        class='relative cursor-pointer transition-all duration-300 ease-in hover:after:absolute hover:after:top-0 hover:after:z-40 hover:after:h-[100%] hover:after:w-[100%] hover:after:rounded-[0.9375rem] hover:after:bg-[#E7816B]/70'
+      >
+        <picture>
+          <source
+            media='(min-width: 1440px)'
+            srcset='/assets/home/desktop/image-app-design.jpg'
+          />
+          <source
+            media='(min-width: 768px)'
+            srcset='/assets/home/tablet/image-app-design.jpg'
+          />
+          <img
+            src='/assets/home/mobile/image-app-design.jpg'
+            alt=''
+            class='rounded-[0.9375rem]'
+          />
+        </picture>
+        <div
+          class='absolute top-0 z-50 flex h-[100%] w-[100%] flex-col items-center justify-center gap-5 rounded-[0.9375rem] text-center md:gap-6'
+        >
+          <h2
+            class='text-9 text-[1.75rem] font-medium tracking-[0.0875rem] text-white md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.125rem]'
+          >
+            App Design
+          </h2>
+          <a
+            href='/app-design'
+            class='flex items-center gap-4 text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.3125rem] text-white'
+            >View Projects
+            <img
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='right arrow'
+            />
+          </a>
+        </div>
+      </div>
+      <!-- Graphic Design -->
+      <div
+        class='relative cursor-pointer transition-all duration-300 ease-in hover:after:absolute hover:after:top-0 hover:after:z-40 hover:after:h-[100%] hover:after:w-[100%] hover:after:rounded-[0.9375rem] hover:after:bg-[#E7816B]/70'
+      >
+        <picture>
+          <source
+            media='(min-width: 1440px)'
+            srcset='/assets/home/desktop/image-graphic-design.jpg'
+          />
+          <source
+            media='(min-width: 768px)'
+            srcset='/assets/home/tablet/image-graphic-design.jpg'
+          />
+          <img
+            src='/assets/home/mobile/image-graphic-design.jpg'
+            alt=''
+            class='rounded-[0.9375rem]'
+          />
+        </picture>
+        <div
+          class='absolute top-0 z-50 flex h-[100%] w-[100%] flex-col items-center justify-center gap-5 rounded-[0.9375rem] text-center md:gap-6'
+        >
+          <h2
+            class='text-9 text-[1.75rem] font-medium tracking-[0.0875rem] text-white md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.125rem]'
+          >
+            Graphic Design
+          </h2>
+          <a
+            href='/app-design'
+            class='flex items-center gap-4 text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.3125rem] text-white'
+            >View Projects
+            <img
+              src='/assets/shared/desktop/icon-right-arrow.svg'
+              alt='right arrow'
+            />
+          </a>
+        </div>
+      </div>
     </section>
+    <!-- Background Pattern Leaf Right -->
+    <section class='relative'>
+      <img
+        src='/assets/shared/desktop/bg-pattern-leaf-right.svg'
+        alt='pattern'
+        class='absolute right-0 top-[107px] z-0 hidden lg:flex'
+      />
+    </section>
+    <!-- Project Pros -->
+    <section
+      class='relative z-50 mx-6 mb-[7.56rem] flex flex-col gap-20 md:mb-[4.19rem] md:ml-[2.44rem] md:mr-10 md:gap-8 lg:mx-[10.31rem] lg:mb-40 lg:flex-row lg:gap-[1.87rem]'
+    >
+      <!-- Passionate -->
+      <div class='flex flex-col items-center gap-12 md:flex-row lg:flex-col'>
+        <div class='relative'>
+          <img
+            src='/assets/home/desktop/illustration-passionate.svg'
+            alt=''
+            class='relative z-50'
+          />
+          <img
+            src='/assets/shared/desktop/bg-pattern-small-circle.svg'
+            alt=''
+            class='absolute top-0'
+          />
+        </div>
+        <div
+          class='flex flex-col items-center justify-center gap-8 text-center md:items-start md:gap-4 md:text-left lg:items-center lg:gap-8 lg:text-center'
+        >
+          <h2
+            class='text-xl font-medium uppercase leading-relaxed tracking-[0.3125rem] text-[#333136]'
+          >
+            Passionate
+          </h2>
+          <p
+            class='w-[20.4375rem] text-base font-normal leading-relaxed text-[#333136] md:w-[27.4375rem] lg:w-[21.875rem]'
+          >
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
+        </div>
+      </div>
+      <!-- Resourceful -->
+      <div class='flex flex-col items-center gap-12 md:flex-row lg:flex-col'>
+        <div class='relative'>
+          <img
+            src='/assets/home/desktop/illustration-resourceful.svg'
+            alt=''
+            class='relative z-50'
+          />
+          <img
+            src='/assets/shared/desktop/bg-pattern-small-circle.svg'
+            alt=''
+            class='absolute top-0'
+          />
+        </div>
+        <div
+          class='flex flex-col items-center justify-center gap-8 text-center md:items-start md:gap-4 md:text-left lg:items-center lg:gap-8 lg:text-center'
+        >
+          <h2
+            class='text-xl font-medium uppercase leading-relaxed tracking-[0.3125rem] text-[#333136]'
+          >
+            Resourceful
+          </h2>
+          <p
+            class='w-[20.4375rem] text-base font-normal leading-relaxed text-[#333136] md:w-[27.4375rem] lg:w-[21.875rem]'
+          >
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our clients’ needs.
+          </p>
+        </div>
+      </div>
+      <!-- Friendly -->
+      <div class='flex flex-col items-center gap-12 md:flex-row lg:flex-col'>
+        <div class='relative'>
+          <img
+            src='/assets/home/desktop/illustration-friendly.svg'
+            alt=''
+            class='relative z-50'
+          />
+          <img
+            src='/assets/shared/desktop/bg-pattern-small-circle.svg'
+            alt=''
+            class='absolute top-0'
+          />
+        </div>
+        <div
+          class='flex flex-col items-center justify-center gap-8 text-center md:items-start md:gap-4 md:text-left lg:items-center lg:gap-8 lg:text-center'
+        >
+          <h2
+            class='text-xl font-medium uppercase leading-relaxed tracking-[0.3125rem] text-[#333136]'
+          >
+            Friendly
+          </h2>
+          <p
+            class='w-[20.4375rem] text-base font-normal leading-relaxed text-[#333136] md:w-[27.4375rem] lg:w-[21.875rem]'
+          >
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Your Project -->
+    <AboutProject />
   </main>
+  <!-- The Footer -->
+  <Footer />
 </Layout>
