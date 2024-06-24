@@ -20,38 +20,106 @@ import Footer from '../components/Footer.astro';
         class='absolute left-0 top-[267px] z-0 hidden lg:flex'
       />
     </section>
-
-    <section class=''>
-      <h1 class=''>About us</h1>
-      <p class=''>
-        Founded in 2010, we are a creative agency that produces lasting results
-        for our clients. We&#39;ve partnered with many startups, corporations,
-        and nonprofits alike to craft designs that make real impact. We&#39;re
-        always looking forward to creating brands, products, and digital
-        experiences that connect with our clients' audiences.
-      </p>
+    <!--  About us -->
+    <section
+      class='relative md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:flex lg:flex-row-reverse'
+    >
+      <picture>
+        <source
+          media='(min-width: 1440px)'
+          srcset='/assets/about/desktop/image-about-hero.jpg'
+        />
+        <source
+          media='(min-width: 768px)'
+          srcset='/assets/about/tablet/image-about-hero.jpg'
+        />
+        <img src='/assets/about/mobile/image-about-hero.jpg' alt='' class='' />
+      </picture>
+      <div
+        class='relative flex flex-col items-center justify-center gap-6 overflow-hidden bg-[#E7816B] px-6 py-20 text-center md:gap-8 md:px-[3.63rem] md:py-16 lg:items-start lg:px-[5.94rem] lg:pb-[7.44rem] lg:pt-[8.44rem] lg:text-left'
+      >
+        <h1
+          class='z-50 text-[2rem] font-medium leading-9 text-white md:text-5xl md:leading-[3rem]'
+        >
+          About us
+        </h1>
+        <p
+          class='leading-1.5625rem] z-50 w-[20.4375rem] text-[0.9375rem] font-normal text-white md:w-[35.8125rem] md:text-base md:leading-relaxed lg:w-[28.625rem]'
+        >
+          Founded in 2010, we are a creative agency that produces lasting
+          results for our clients. We&#39;ve partnered with many startups,
+          corporations, and nonprofits alike to craft designs that make real
+          impact. We&#39;re always looking forward to creating brands, products,
+          and digital experiences that connect with our clients' audiences.
+        </p>
+        <!-- Mobile Pattern -->
+        <img
+          src='/assets/shared/desktop/bg-pattern-hero-desktop.svg'
+          alt=''
+          class='absolute right-[-68px] top-[-217px] z-30 md:hidden lg:hidden'
+        />
+        <!-- Tbalet Pattern  -->
+        <img
+          src='/assets/shared/desktop/bg-pattern-hero-desktop.svg'
+          alt=''
+          class='absolute bottom-[91px] left-[-150px] z-30 hidden md:flex lg:hidden'
+        />
+        <!-- Desktop Pattern -->
+        <img
+          src='/assets/shared/desktop/bg-pattern-hero-home.svg'
+          alt=''
+          class='absolute z-30 hidden lg:bottom-0 lg:left-0 lg:flex'
+        />
+      </div>
     </section>
-
-    <section class=''>
-      <h2 class=''>World-class talent</h2>
-      <p class=''>
-        We are a crew of strategists, problem-solvers, and technologists. Every
-        design is thoughtfully crafted from concept to launch, ensuring success
-        in its given market. We are constantly updating our skills in a myriad
-        of platforms.
-      </p>
-      <p class=''>
-        Our team is multi-disciplinary and we are not merely interested in form
-        — content and meaning are just as important. We give great importance to
-        craftsmanship, service, and prompt delivery. Clients have always been
-        impressed with our high-quality outcomes that encapsulates their
-        brand&#39;s story and mission.
-      </p>
+    <!--  World-class talent -->
+    <section
+      class='relative mb-24 md:my-[7.5rem] md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:my-40 lg:flex lg:flex-row'
+    >
+      <picture>
+        <source
+          media='(min-width: 1440px)'
+          srcset='/assets/about/desktop/image-world-class-talent.jpg'
+        />
+        <source
+          media='(min-width: 768px)'
+          srcset='/assets/about/tablet/image-world-class-talent.jpg'
+        />
+        <img
+          src='/assets/about/mobile/image-world-class-talent.jpg'
+          alt=''
+          class=''
+        />
+      </picture>
+      <div
+        class='flex flex-col items-center justify-center gap-6 bg-[#fbf2ef] px-6 py-20 text-center md:py-[4.25rem] md:pl-[3.69rem] md:pr-[3.62rem] lg:items-start lg:px-24 lg:py-[9.63rem] lg:text-left'
+      >
+        <h2
+          class='text-[2rem] font-medium leading-9 text-[#E7816B] md:text-[2.5rem] md:leading-[3rem]'
+        >
+          World-class talent
+        </h2>
+        <p
+          class='w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#333136] md:w-[35.75rem] md:text-base md:leading-relaxed lg:w-[27.8125rem]'
+        >
+          We are a crew of strategists, problem-solvers, and technologists.
+          Every design is thoughtfully crafted from concept to launch, ensuring
+          success in its given market. We are constantly updating our skills in
+          a myriad of platforms.
+        </p>
+        <p
+          class='w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#333136] md:w-[35.75rem] md:text-base md:leading-relaxed lg:w-[27.8125rem]'
+        >
+          Our team is multi-disciplinary and we are not merely interested in
+          form — content and meaning are just as important. We give great
+          importance to craftsmanship, service, and prompt delivery. Clients
+          have always been impressed with our high-quality outcomes that
+          encapsulates their brand&#39;s story and mission.
+        </p>
+      </div>
     </section>
-
     <!-- See Locations -->
     <SeeLocations />
-
     <!-- Background Pattern Leaf Right -->
     <section class='relative'>
       <img
@@ -60,26 +128,49 @@ import Footer from '../components/Footer.astro';
         class='absolute right-0 top-[107px] z-0 hidden lg:flex'
       />
     </section>
-
-    <section class=''>
-      <h2 class='h'>The real deal</h2>
-      <p class=''>
-        As strategic partners in our clients&#39; businesses, we are ready to
-        take on any challenge as our own. Solving real problems require empathy
-        and collaboration, and we strive to bring a fresh perspective to every
-        opportunity. We make design and technology more accessible and give you
-        tools to measure success.
-      </p>
-      <p class=''>
-        We are visual storytellers in appealing and captivating ways. By
-        combining business and marketing strategies, we inspire audiences to
-        take action and drive real results.
-      </p>
+    <!-- The real deal -->
+    <section
+      class='relative mb-24 md:my-[7.5rem] md:ml-[2.44rem] md:mr-10 lg:mx-[10.31rem] lg:my-40 lg:flex lg:flex-row-reverse'
+    >
+      <source
+        media='(min-width: 1440px)'
+        srcset='/assets/about/desktop/image-real-deal.jpg'
+      />
+      <source
+        media='(min-width: 768px)'
+        srcset='/assets/about/tablet/image-real-deal.jpg'
+      />
+      <img src='/assets/about/mobile/image-real-deal.jpg' alt='' class='' />
+      <div
+        class='flex flex-col items-center justify-center gap-6 bg-[#fbf2ef] px-6 py-20 text-center md:py-[5.87rem] md:pl-[3.69rem] md:pr-[3.62rem] lg:items-start lg:py-[9.63rem] lg:pl-[5.88rem] lg:pr-[5.87rem] lg:text-left'
+      >
+        <h2
+          class='text-[2rem] font-medium leading-9 text-[#E7816B] md:text-[2.5rem] md:leading-[3rem]'
+        >
+          The real deal
+        </h2>
+        <p
+          class='w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#333136] md:w-[35.75rem] md:text-base md:leading-relaxed lg:w-[27.8125rem]'
+        >
+          As strategic partners in our clients&#39; businesses, we are ready to
+          take on any challenge as our own. Solving real problems require
+          empathy and collaboration, and we strive to bring a fresh perspective
+          to every opportunity. We make design and technology more accessible
+          and give you tools to measure success.
+        </p>
+        <p
+          class='w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#333136] md:w-[35.75rem] md:text-base md:leading-relaxed lg:w-[27.8125rem]'
+        >
+          We are visual storytellers in appealing and captivating ways. By
+          combining business and marketing strategies, we inspire audiences to
+          take action and drive real results.
+        </p>
+      </div>
     </section>
-
-    <!-- About Your Project -->
-    <AboutProject />
   </main>
-  <!-- The Footer -->
-  <Footer />
+
+  <!-- About Your Project -->
+  <AboutProject />
 </Layout>
+<!-- The Footer -->
+<Footer />

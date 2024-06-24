@@ -2,11 +2,87 @@
 import '@/styles/globals.css';
 ---
 
-<section class=''>
-  <h3 class=''>Canada</h3>
-  <a href='' class=''>See location</a>
-  <h3 class=''>Australia</h3>
-  <a href='' class=''>See location</a>
-  <h3 class=''>United Kingdom</h3>
-  <a href='' class=''>See location</a>
+<section
+  class='mx-6 flex flex-col items-center justify-center gap-12 md:ml-[2.44rm] md:mr-10 md:gap-20 lg:mx-[10.31rem] lg:flex-row lg:gap-[11.13rem]'
+>
+  <!-- Canada -->
+  <div class='flex flex-col items-center justify-center gap-12'>
+    <div class='relative'>
+      <img
+        src='/public/assets/shared/desktop/illustration-canada.svg'
+        alt=''
+        class=''
+      />
+      <img
+        src='/public/assets/shared/desktop/bg-pattern-small-circle.svg'
+        alt=''
+        class='absolute top-0'
+      />
+    </div>
+    <div class='flex flex-col gap-8 text-center'>
+      <h3
+        class='text-xl font-medium leading-relaxed tracking-[0.3125rem] text-[#333136]'
+      >
+        Canada
+      </h3>
+      <a
+        href='/locations'
+        class='ransition-colors flex h-14 w-[9.5rem] cursor-pointer items-center justify-center rounded-lg bg-[#E7816B] text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.0625rem] text-white transition duration-300 ease-in hover:bg-[#FFAD9B]'
+        >See location</a
+      >
+    </div>
+  </div>
+  <!-- Australia -->
+  <div class='flex flex-col items-center justify-center gap-12'>
+    <div class='relative'>
+      <img
+        src='/public/assets/shared/desktop/illustration-australia.svg'
+        alt=''
+      />
+      <img
+        src='/public/assets/shared/desktop/bg-pattern-small-circle.svg'
+        alt=''
+        class='absolute top-0'
+      />
+    </div>
+    <div class='flex flex-col gap-8 text-center'>
+      <h3
+        class='text-xl font-medium leading-relaxed tracking-[0.3125rem] text-[#333136]'
+      >
+        Australia
+      </h3>
+      <a
+        href='/locations'
+        class='ransition-colors flex h-14 w-[9.5rem] cursor-pointer items-center justify-center rounded-lg bg-[#E7816B] text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.0625rem] text-white transition duration-300 ease-in hover:bg-[#FFAD9B]'
+        >See location</a
+      >
+    </div>
+  </div>
+  <!-- UK -->
+  <div class='flex flex-col items-center justify-center gap-12'>
+    <div class='relative'>
+      <img
+        src='/public/assets/shared/desktop/illustration-united-kingdom.svg'
+        alt=''
+        class=''
+      />
+      <img
+        src='/public/assets/shared/desktop/bg-pattern-small-circle.svg'
+        alt=''
+        class='absolute top-0'
+      />
+    </div>
+    <div class='flex flex-col gap-8 text-center'>
+      <h3
+        class='text-xl font-medium leading-relaxed tracking-[0.3125rem] text-[#333136]'
+      >
+        United Kingdom
+      </h3>
+      <a
+        href='/locations'
+        class='flex h-14 w-[9.5rem] cursor-pointer items-center justify-center rounded-lg bg-[#E7816B] text-[0.9375rem] font-medium uppercase leading-normal tracking-[0.0625rem] text-white transition-colors duration-300 ease-in hover:bg-[#FFAD9B]'
+        >See location</a
+      >
+    </div>
+  </div>
 </section>
